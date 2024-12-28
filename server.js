@@ -24,9 +24,9 @@ app.use(middleware)
 // SERVER INIT
 connectDB().once('open', (err) => {
     if (err) throw new Error(err)
-    console.log(`Server INIT  a success`)
+    console.log(`Succefssfully connected to the Database`)
     app.listen(process.env.PORT, (error) => {
-        if (error) throw new Error(error)
+        if (error instanceof Error) throw new Error(error)
         console.log(`App INIT a success, App is live on PORT ${process.env.PORT}`)
     })
 })
