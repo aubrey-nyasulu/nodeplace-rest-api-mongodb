@@ -25,6 +25,6 @@
     "cors": "^2.8.5",
     "mongodb": "^6.12.0",
     "mongoose": "^8.9.2",
-    "nodeplace": "^0.2.7"
+    "nodeplace": "^0.2.8"
   }
 }
